@@ -2,12 +2,12 @@
 
 Wrapper to log all calls to a linux command
 
-particular use case: My configuration management tool calls apt/dpkg. An error occurs, but unfortunately my configuration management tool 
+particular use case: My configuration management tool calls `/usr/bin/dpkg`. An error occurs, but unfortunately my configuration management tool 
 does not show me the whole stdout/stderr. I have no clue what's wrong.
 
 General use case: Wrap a linux command like `/usr/bin/dpkg` and write out all calls to this.
 
-Caution: This is just for debugging. There is a heavy symlink-attack, since the log files is in /var/tmp.
+Caution: This is just for debugging. There is a heavy symlink-attack, since the log file has a fixed name in /var/tmp.
 
 # Install
 
