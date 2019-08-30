@@ -45,3 +45,11 @@ dpkg-deb: error: <decompress> subprocess returned error exit status 2
 Errors were encountered while processing:
  /var/cache/apt/archives/openssl-foo-bar-user.cert_1-2_all.deb
 ```
+# Uninstall
+
+Important, don't forget this step!
+
+```
+rm /usr/bin/dpkg
+cp -a /usr/bin/dpkg-orig /usr/bin/dpkg
+```
