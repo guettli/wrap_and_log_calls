@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# Doc: https://github.com/guettli/wrap_and_log_calls
 import os
 import sys
 import select
